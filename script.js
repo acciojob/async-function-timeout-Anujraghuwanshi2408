@@ -5,9 +5,9 @@ async function toMakeDelay(){
 	const text = document.getElementById('text').value
 	const delay = document.getElementById('delay').value
 	const output = document.getElementById('output');
-	output.innerText = text;
-	await new Promise(resolve => setTimeout(resolve , delay*1000) ) 
 	output.innerText = '';
+	await new Promise(resolve => setTimeout(resolve , delay*1000) ) 
+	output.innerText = text;
 	
 }
 // async function displayMessage() {
