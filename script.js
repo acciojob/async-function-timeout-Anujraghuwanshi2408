@@ -6,7 +6,7 @@ async function toMakeDelay(){
 	const delay = document.getElementById('delay').value
 	const output = document.getElementById('output');
 	// output.innerText = '';
-	await new Promise(resolve => setTimeout(resolve , delay*1000) ) 
+	await new Promise(resolve => setTimeout(resolve , delay) ) 
 	output.innerText = text;
 	
 }
