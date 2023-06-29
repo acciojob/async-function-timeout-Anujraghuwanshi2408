@@ -4,8 +4,7 @@ btn.addEventListener("click" , toMakeDelay);
 async function toMakeDelay(){
 	const text = document.getElementById("text").value
 	const delay = document.getElementById("delay").value
-	const output = document.getElementById("delay");
-	await settimeout(() => {
-		output.innerText = text;
-	} , delay*1000)
+	const output = document.getElementById("output");
+	await new Promise(resolve => setTimeout(resolve , delay*1000) ) 
+	output.innerText = text;
 }
